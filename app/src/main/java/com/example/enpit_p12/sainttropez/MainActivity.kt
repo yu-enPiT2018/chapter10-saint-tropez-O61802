@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 val uri = Uri.parse("sms:$number")
                 var intent = Intent(Intent.ACTION_VIEW)
                 intent.data = uri
-                startActivity(intent)
+                startActivity(intent)       //プル用
                 return true
             }
             R.id.mail -> {
